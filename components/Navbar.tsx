@@ -13,6 +13,7 @@ import useAuthStore from '../store/authStore'
 const Navbar = () => {
     const [searchValue, setSearchValue] = useState('')
     const { userProfile, addUser, removeUser } = useAuthStore()
+
     const router = useRouter()
 
     const handleSearch = (e: { preventDefault: () => void }) => {
@@ -20,6 +21,7 @@ const Navbar = () => {
         if (searchValue) {
             router.push(`/search/${searchValue}`)
         }
+
     }
 
     return (
