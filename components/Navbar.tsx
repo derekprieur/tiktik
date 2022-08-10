@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
-import Link from 'next/Link'
+import Link from 'next/link'
 import Router, { useRouter } from 'next/router'
 import { AiOutlineLogout } from 'react-icons/ai'
 import { BiSearch } from 'react-icons/bi'
